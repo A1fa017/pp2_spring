@@ -1,5 +1,6 @@
 s = input()
 l = []
+ok = True
 for i in s:
     if i == '(' or i == '[' or i ==  '{':
         l.append(i)
@@ -11,7 +12,10 @@ for i in s:
                 l.pop()
             if i == '}' and l[-1] == '{':
                 l.pop()
-if len(l)>0:
+        else:
+            ok = False
+if len(l)>0 or ok == False:
     print('No')
 else:
     print('Yes')
+    
