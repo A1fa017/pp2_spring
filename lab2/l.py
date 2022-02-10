@@ -18,4 +18,3 @@ if len(l)>0 or ok == False:
     print('No')
 else:
     print('Yes')
-    
