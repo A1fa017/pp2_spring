@@ -1,10 +1,7 @@
 import time
 s = input()
-l = ''
-for i in reversed(s):
-    l += i
-
+l = reversed(s)
 if l == s:
-    print('Yes')
+    print('yes')
 else:
     print('no')

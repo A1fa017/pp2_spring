@@ -1,6 +1,12 @@
 import os
-for i in os.listdir('.'):
-    print('-----',i)
-    if os.path.isdir(i):
-        for j in os.listdir(i):
-            print('-----'*2,j)
+
+def printContent(level, path):
+    for x in os.listdir(path):
+        for i in range(level + 1):
+            print('-----',end='')
+        print(x)
+        if os.path.isdir(path + "/" + x):
+            printContent(level + 1, path + "/" + x)
+
+
+printContent(0, ".")
