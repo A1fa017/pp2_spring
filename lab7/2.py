@@ -3,7 +3,7 @@ import os
 
 pygame.init()
 screen = pygame.display.set_mode((400,400))
-pygame.display.set_caption('заебись')
+pygame.display.set_caption('sound')
 sounds = [f'sounds/{file}' for file in os.listdir('sounds')]
 music = pygame.mixer.music
 music.load(sounds[0])
