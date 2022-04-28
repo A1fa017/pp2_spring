@@ -1,5 +1,5 @@
 import psycopg2
-from lab10.PhoneBook.config import host,database,user,password
+from config import host,database,user,password
 import csv
 
 def create(connection):
